@@ -1,0 +1,42 @@
+<!--<%@page contentType="text/html;charset=UTF-8" %>-->
+
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<!--<%@include file="/common/header.jsp" %>-->
+		
+				
+				<h2 align="center" >ユーザー情報一覧</h2>
+
+		<hr align="center" size="2" color="ffa500" width="950"></hr>
+
+<br>
+
+		<table align="center">
+			<tr>
+				<th bgcolor="ffd700" width="200">ユーザーID</th>
+				<th bgcolor="ffd700" width="200">名前</th>
+				<th bgcolor="ffd700" width="200">メールアドレス</th>
+				<th bgcolor="ffd700" width="200">売上金</th>
+			</tr>
+			<!--<%
+			//取得したユーザーをループ処理を利用し画面に表示
+			//ユーザーIDをクリックするとユーザー詳細画面に飛ぶ（ユーザー側のアカウント情報画面と同じ）
+			%>-->
+			<tr>
+				<td align="center" width="200">001<a href="<%=request.getContextPath()%>/delete?isbn=<%=books.getIsbn()%>"></a></td>
+				<td align="center" width="200">神田太郎</td>
+				<td align="center" width="200">********</td>
+				<td align="center" width="200">5000円</td>
+				
+				
+				
+			</tr>
+			
+		</table>
+		<!--<%@include file="/common/footer.jsp" %>-->
+
+	</body>
+</html>
